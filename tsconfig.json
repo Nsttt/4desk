@@ -1,15 +1,33 @@
 {
+  "include": [
+    "src",
+    "./tailwind.config.cjs",
+    "./postcss.config.cjs",
+    "./vite.config.ts"
+  ],
   "compilerOptions": {
-    "strict": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "useUnknownInCatchVariables": true,
+    "noUncheckedIndexedAccess": true,
     "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "types": ["vite/client"],
-    "noEmit": true,
-    "isolatedModules": true
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
   }
 }
