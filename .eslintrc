@@ -1,9 +1,6 @@
 {
-  "env": {
-    "browser": true,
-    "node": true
-  },
   "extends": [
+    "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -12,8 +9,8 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": "latest",
-    "project": ["./tsconfig.json"]
+    "files": ["*.ts", "*.tsx"],
+    "project": "tsconfig.json"
   },
   "plugins": ["@typescript-eslint", "simple-import-sort"],
   "rules": {
@@ -22,6 +19,7 @@
     "@typescript-eslint/no-unsafe-call": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/consistent-type-imports": "warn",
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error"
   },

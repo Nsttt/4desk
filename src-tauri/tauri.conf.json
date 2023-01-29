@@ -2,9 +2,8 @@
   "build": {
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build",
-    "devPath": "http://localhost:1420",
-    "distDir": "../dist",
-    "withGlobalTauri": false
+    "devPath": "http://localhost:3000",
+    "distDir": "../dist"
   },
   "package": {
     "productName": "desk",
@@ -14,8 +13,10 @@
     "allowlist": {
       "all": false,
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "execute": true,
+        "open": true,
+        "sidecar": true
       }
     },
     "bundle": {
